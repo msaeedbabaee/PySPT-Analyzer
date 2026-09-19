@@ -165,9 +165,9 @@ class SPTAnalyzer:
         )
 
         # Plot 1: SPT Profiles
-        axs[0].plot(n_fields, depths, "o--k", label="N_field")
-        axs[0].plot(n60s, depths, "s-b", label="N60")
-        axs[0].plot(n1_60s, depths, "^-r", label="(N1)60")
+        axs[0].plot(n_fields, depths, "o--", color="black", label="N_field")
+        axs[0].plot(n60s, depths, "s-", color="blue", label="N60")
+        axs[0].plot(n1_60s, depths, "^-", color="red", label="(N1)60")
         axs[0].set_xlabel("SPT N-Value", fontweight="bold")
         axs[0].set_ylabel("Depth (m)", fontweight="bold")
         axs[0].set_title("SPT Values vs Depth")
@@ -186,7 +186,7 @@ class SPTAnalyzer:
             if item["soil_type"] == "Cohesive"
         ]
         if cu_depths:
-            axs[1].plot(cu_vals, cu_depths, "s-purple", label="cu (kPa)")
+            axs[1].plot(cu_vals, cu_depths, "s-", color="purple", label="cu (kPa)")
             axs[1].set_xlabel(
                 "Undrained Shear Strength cu (kPa)", fontweight="bold"
             )
@@ -207,7 +207,7 @@ class SPTAnalyzer:
         ]
         if phi_depths:
             axs[2].plot(
-                phi_vals, phi_depths, "d-green", label="Friction Angle φ (°)"
+                phi_vals, phi_depths, "d-", color="green", label="Friction Angle φ (°)"
             )
             axs[2].set_xlabel(
                 "Friction Angle φ (degrees)", fontweight="bold"
