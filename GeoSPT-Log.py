@@ -258,7 +258,7 @@ raw_borehole_data = [
     {"soil_type": "cohesive", "N_field": 6, "depth": 3.0, "unit_weight": 18.0},
     {
         "soil_type": "cohesionless",
-        "N_field": 14,,
+        "N_field": 14,
         "depth": 4.5,
         "unit_weight": 18.5,
     },
